@@ -1,0 +1,1050 @@
+
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns:og='https://ogp.me/ns#'>
+
+  <head prefix='og: https://ogp.me/ns# fb: https://graph.facebook.com/schema/og/ article: https://graph.facebook.com/schema/og/article'>
+      
+ 
+   
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+<meta charset='utf-8'/> 
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+
+      <title>
+        H&ensp;A&ensp;B&ensp;I&ensp;B&ensp;U&ensp;L&emsp; I&ensp;S&ensp;L&ensp;A&ensp;M
+      </title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --yellow:#f9ca24;
+}
+
+    *{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--yellow);
+    color:#333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+
+body{
+    background:#111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.btn{
+    padding:.7rem 3rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    display: inline-block;
+}
+.btn a{
+    color: white;
+}
+
+.btn a i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+
+.heading span{
+    color:var(--yellow);
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:#1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+header .user .post{
+    font-size: 2rem;
+    color:#eee;
+}
+
+header .navbar{
+    width:100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+
+header .navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background:var(--yellow);
+}
+
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+
+.home h3{
+    padding-top: 150px;
+    font-size: 2.5rem;
+    color:#fff;
+}
+
+.home h1{
+    font-size:5rem;
+    color:#fff;
+}
+
+.home h1 span{
+    color:var(--yellow);
+    
+}
+
+.home h1 span{
+    animation: type 6s steps(19) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid var(--yellow);
+    display: inline-flex;
+}
+@keyframes type{
+    0% {
+        width: 0ch;
+    }
+    80%{
+        width: 18ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+.home p{
+    font-size:2rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span{
+    color:#eee;
+    padding:0 .5rem;
+}
+
+.about .row .counter{
+    flex:1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box{
+    width:20rem;
+    background:#222;
+    text-align: center;
+    padding: 2rem;
+    margin:2rem;
+}
+
+.about .row .counter .box span{
+    font-size: 4rem;
+    color:var(--yellow);
+}
+
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color:#fff;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:#222;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--yellow);
+}
+
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding:1.5rem;
+    margin:1rem 0;
+    background:#3333;
+    color:#fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:#eee;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color:var(--yellow);
+}
+.contact .row .content .info h3 a{
+    color:#fff;
+    text-decoration="none";
+}
+
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    position: fixed;
+  }
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: #f9ca24;
+    width: 0%;
+    position: fixed;
+  }
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .counter .box{
+        width: 100%;
+    }
+ 
+    .education .box-container .box{
+        width:100%;
+    }
+
+    .portfolio .box-container .box{
+        width:100%;
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+
+ }
+ /* skill */
+ .skill-section{
+    padding: 200px 0px 0px 250px;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+ }
+ .skill{
+    text-align: center;
+    font-size: 80px;
+    font: weight 100px;
+    color: rgba(255,255,255,0.8);
+    
+ }
+ .skill-bars{
+    padding: 25px 30px;
+    width: 1000px;
+    background: rgb(20, 19, 13);
+    box-shadow: 20px 50px 20px rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    align-items: center;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    color: rgba(194, 194, 194, 0.8);
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 90%;
+  }
+  .bar .progress-line.css span{
+    width: 85%;
+  }
+  .bar .progress-line.jquery span{
+    width: 80%;
+  }
+  .bar .progress-line.python span{
+    width: 60%;
+  }
+  .bar .progress-line.mysql span{
+    width: 72%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #36454F;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 1.3s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "90%";
+  }
+  .progress-line.css span::after{
+    content: "75%";
+  }
+  .progress-line.jquery span::after{
+    content: "85%";
+  }
+  .progress-line.python span::after{
+    content: "60%";
+  }
+  .progress-line.mysql span::after{
+    content: "72%";
+  }
+ 
+
+</style>
+
+
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div class="user">
+            <img src="https://github.com/habibcoder20/PICTURE/blob/c6f38e8804875d9b222fda65c50ec9b050e0d0ae/1625426372833.jpg?raw=true" alt="Habibl Islam Ruddro">
+            <h3 class="name">Habibl Islam</h3>
+            <p class="post">A Passionate Web Researcher.</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+    <!-- Scroll  -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    <!-- Scroll  -->
+
+    <section class="home" id="home">
+
+        <h3>HI THERE !</h3>
+        <h1>I'M <span class="animate">Habibul Islam Ruddro...</span></h1>
+        <p>I’m an Independent Security Researcher.Now I'm learn this field. I’m currently working in the cybersecurity
+            sector mainly as a Bug Bounty Hunter and Penetration Tester, performing web/mobile application security
+            assessments and network security assessments.With 1 years of experience.
+        </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+
+
+    </section>
+
+
+    <!-- home section ends -->
+    
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about & </span> Acknowledgements </h1>
+
+        <div class="row">
+
+            <div class="info">
+                <h3> <span> name : </span> habibul islam ruddro </h3>
+                <h3> <span> age : </span> 20 </h3>
+                <h3> <span> qualification : </span> CSE(bsc) </h3>
+                <h3> <span> post : </span> bug bounty hounter </h3>
+                <h3> <span> language : </span> bengal,english,hindi </h3>
+                <a href="https://raw.githubusercontent.com/habibcoder20/PICTURE/cef4a73a17e55564e9a3afcf026b67667c54f2b4/CV_2021-08-28_Habibul_Islam_2.pdf"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+            </div>
+
+            <div class="counter">
+
+                <div class="box">
+                    <span>1+</span>
+                    <h3>years of experience</h3>
+                </div>
+
+                <div class="box">
+                    <span>3+</span>
+                    <h3>porject completed</h3>
+                </div>
+
+                <div class="box">
+                    <span>27+</span>
+                    <h3>happy clients</h3>
+                </div>
+
+                <div class="box">
+                    <span>1+</span>
+                    <h3>awards won</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--skill-->
+        <section class="skill-section">
+
+            <div class="skill-bars">
+                <h1 class="skill">skills</h1>
+                <div class="bar">
+                    <div class="info">
+                        <span>HTML/CSS</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>C/C++</span>
+                    </div>
+                    <div class="progress-line jquery">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Website Security Testing</span>
+                    </div>
+                    <div class="progress-line mysql">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--skill-->
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> education & <span>achivement</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2016</span>
+                <h3>SSC </h3>
+                <p>I completed my SSC examination of Pabna zilla school.I pust here more than two years.I love it most.
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2019</span>
+                <h3>HSC</h3>
+                <p>hey it's very important years for me.this years i completed my HSC examination of Govt. Edward
+                    College.it's a amazing place for me to gain knowledge.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2019</span>
+                <h3>Admission</h3>
+                <p>This time also very important for me.It's a very important time for every students.I got chance the
+                    number of university but i will decided to admit PUST.because CSE is my passion.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2020</span>
+                <h3>learn cybersecurity </h3>
+                <p>I Start's my journey for CEH at 28 October.It's a great decision for my life!</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2020</span>
+                <h3>First CEH Examination EC-Council's</h3>
+                <p>Certified Ethical Hacker (CEH) is a qualification obtained by demonstrating knowledge of assessing
+                    the security of computer systems by looking for weaknesses and vulnerabilities in target systems,
+                    using the same knowledge and tools as a malicious hacker, but in a lawful and legitimate manner to
+                    assess the security posture of a target system. </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2021</span>
+                <h3>My fist Bounty </h3>
+                <p>I obtained $5 bounty from Bugcrowd.It's not a a big amount but it's boost my journey.</p>
+            </div>
+            
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022</span>
+                <h3>First Project Completed </h3>
+                <p>My First Project Cricket Live Score using OOP concept Sucessfully completed.
+                </p>
+            </div>
+
+            
+            
+            
+
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+    <!-- portfolio section starts  -->
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> my <span>portfolio</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="https://github.com/habibcoder20/PICTURE/blob/main/ud1.jpg?raw=true">
+            </div>
+
+            <div class=" box">
+                <img src="https://github.com/habibcoder20/PICTURE/blob/main/ud2.jpg?raw=true" alt="">
+            </div>
+
+            <div class="box">
+                <img src="https://github.com/habibcoder20/PICTURE/blob/main/ud3.jpg?raw=true" alt="">
+            </div>
+
+            <div class="box">
+                <img src="https://github.com/habibcoder20/PICTURE/blob/main/ud.jpg?raw=true" alt="">
+            </div>
+
+            <div class="box">
+                <img src="https://github.com/habibcoder20/PICTURE/blob/main/ud3.jpg?raw=true" alt="">
+            </div>
+
+            <div class="box">
+                <img src="https://github.com/habibcoder20/PICTURE/blob/main/ud.jpg?raw=true" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> sharkabir01@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> +8801784-337747 </h3>
+                    <h3> <i class="fas fa-phone"></i> +8801611-262258 </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Pabna, Bangladesh - 6600. </h3>
+                    <h3><i class="fa-brands fa-facebook" aria-hidden="true"></i><a class="fb" href="https://web.facebook.com/ruddro.cse.20">Habibul Islam Ruddro</a></h3>
+                </div>
+
+            </div>
+
+            <form action="">
+
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="project" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn"><a href="https://oxruddro.000webhostapp.com/errorpage.html">send</a>
+                    <i class="fas fa-paper-plane"></i> </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+
+    <!-- scroll top button -->
+
+    <a href="#home" class="top">
+        <img src="images/scroll-top-img.png" alt="">
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a064f39bb5.js" crossorigin="anonymous"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+$('#menu').click(function () {
+    $(this).toggleClass('fa-times');
+    $('header').toggleClass('toggle');
+});
+
+$(window).on('scroll load', function () {
+
+    $('#menu').removeClass('fa-times');
+    $('header').removeClass('toggle');
+
+    if ($(window).scrollTop() > 0) {
+        $('.top').show();
+    } else {
+        $('.top').hide();
+    }
+
+});
+
+// smooth scrolling 
+
+$('a[href*="#"]').on('click', function (e) {
+
+    e.preventDefault();
+
+    $('html, body').animate({
+
+        scrollTop: $($(this).attr('href')).offset().top,
+
+    },
+        500,
+        'linear'
+    );
+
+});
+window.onscroll = function () { myFunction() };
+
+function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+});
+
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
