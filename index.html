@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns:og='https://ogp.me/ns#'>
 
@@ -189,12 +188,38 @@ header .navbar ul li a:hover{
 
 .home h3{
     padding-top: 150px;
-    font-size: 2.5rem;
+    font-size: 2.5vh;
     color:#fff;
 }
+.home h3{
+    animation: colors 6s infinite;
+    animation-delay: initial;
+}
+@keyframes colors{
+    0% {
+        color: #fff;
+    }
+    35%{
+        color: #967e28;
+    }
+    50%{
+        color: #ffc801;
+    }
+    65%{
+        color: #c55205;
+    }
+    80%{
+        color:rgba(207, 14, 14, 0.8);
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+
 
 .home h1{
-    font-size:5rem;
+    font-size:4vh;
     color:#fff;
 }
 
@@ -205,6 +230,8 @@ header .navbar ul li a:hover{
 
 .home h1 span{
     animation: type 6s steps(19) infinite;
+    animation-delay: initial;
+
     overflow: hidden;
     white-space: nowrap;
     border-right: 4px solid var(--yellow);
@@ -223,9 +250,9 @@ header .navbar ul li a:hover{
 }
 
 .home p{
-    font-size:2rem;
+    font-size:2vh;
     color:#eee;
-    padding: 1rem 0;
+    padding: 5vw 0;
 }
 
 .about .row{
@@ -379,13 +406,24 @@ header .navbar ul li a:hover{
 .contact .row form .box{
     padding:1.5rem;
     margin:1rem 0;
+  
     background:#3333;
     color:#fff;
     text-transform: none;
     font-size: 1.7rem;
     width:100%;
 }
-
+.contact .row form .btn:hover{
+    transform: scale(1.1);
+    border:2px solid rgb(255, 255, 255);
+    background: #f9ca24;
+    
+}
+.contact .row form .box:focus{
+    
+    border-bottom: 2px solid #f9ca24;
+    
+}
 .contact .row form .box::placeholder{
     text-transform: capitalize;
 }
@@ -516,10 +554,11 @@ header .navbar ul li a:hover{
  }
  /* skill */
  .skill-section{
-    padding: 200px 0px 0px 250px;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-top: 10%;
     margin: auto;
     height: 10vh;
-max-width:100%;
     align-items: center;
     justify-content: center;
  }
@@ -531,21 +570,21 @@ max-width:100%;
     
  }
  .skill-bars{
-    padding: 5% 5%;
+    padding-top:  2%;
     width: 100%;
     background: rgb(20, 19, 13);
     box-shadow: 20px 50px 20px rgba(255, 0, 0, 0.2);
-    border-radius: auto;
+    border-radius: 10px;
     align-items: center;
   }
   .skill-bars .bar{
-    margin: 8% 0;
+    margin:3vw  0;
   }
   .skill-bars .bar:first-child{
     margin-top: 0px;
   }
   .skill-bars .bar .info{
-    margin-bottom: 5%;
+    margin-bottom: 1vh;
   }
   .skill-bars .bar .info span{
     font-weight: 500;
@@ -561,7 +600,7 @@ max-width:100%;
     }
   }
   .skill-bars .bar .progress-line{
-    height: auto;
+    height: 10px;
     width: 100%;
     background: #f0f0f0;
     position: relative;
@@ -747,7 +786,7 @@ max-width:100%;
                 <h3> <span> qualification : </span> CSE(bsc) </h3>
                 <h3> <span> post : </span> bug bounty hounter </h3>
                 <h3> <span> language : </span> bengal,english,hindi </h3>
-                <a href="https://raw.githubusercontent.com/habibcoder20/PICTURE/cef4a73a17e55564e9a3afcf026b67667c54f2b4/CV_2021-08-28_Habibul_Islam_2.pdf"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+                <a href="https://oxruddro.000webhostapp.com/Portfolio/index.html"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
             </div>
 
             <div class="counter">
@@ -967,8 +1006,8 @@ max-width:100%;
 
             <form action="">
 
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
+                <input type="text" id="name" placeholder="name" class="box" >
+                <input type="email" id="email" placeholder="email" class="box" required>
                 <input type="text" placeholder="project" class="box">
                 <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
                 <button type="submit" class="btn"><a href="https://oxruddro.000webhostapp.com/redirect.html">send</a>
@@ -1071,18 +1110,3 @@ function myFunction() {
 </body>
 
 </html>
-  
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
